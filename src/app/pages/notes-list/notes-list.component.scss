@@ -1,0 +1,35 @@
+@import "../../../main-styles.scss";
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+
+  margin: auto;
+  padding-top: 40px;
+}
+
+input[type="text"] {
+  outline: 1px dotted grey;
+}
+
+.notes-list {
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+app-note-card {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.floating-add-button {
+  position: fixed;
+  bottom: 0;
+  width: 500px;
+  border-radius: 0;
+
+  box-shadow: 0px 0px 15px 5px rgba($purple, 0.2);
+
+  height: 60px;
+}

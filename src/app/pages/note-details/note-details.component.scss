@@ -1,0 +1,23 @@
+.form-container {
+  max-width: 600px;
+
+  margin: 40px auto 0 auto;
+}
+
+.field {
+  margin-bottom: 28px;
+}
+
+[type="text"],
+textarea {
+  outline: 1px dotted grey;
+
+  &.ng-invalid.ng-touched {
+    border-color: red;
+    outline: none;
+
+    &:focus {
+      box-shadow: 0px 0px 0px 2px rgba(red, 0.1);
+    }
+  }
+}
